@@ -29,6 +29,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
+          provenance: false
           tags: ${{ env.CR_URI }}/helloworld:build${{ github.sha }}
           file: ./Dockerfile
           context: .
