@@ -30,4 +30,4 @@ jobs:
           push: true
           tags: ${{ env.CR_URI }}/helloworld:build${{ github.sha }}
           file: ./Dockerfile
-          context: ./Dockerfile
+          context: .
