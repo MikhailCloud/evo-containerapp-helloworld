@@ -28,6 +28,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
+          platforms: linux/amd64
           tags: ${{ env.CR_URI }}/helloworld:build${{ github.sha }}
           file: ./Dockerfile
           context: .
