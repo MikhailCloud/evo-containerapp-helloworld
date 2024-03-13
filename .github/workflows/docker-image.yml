@@ -24,10 +24,10 @@ jobs:
           username: ${{ secrets.EVO_CR_LOGIN }}
           password: ${{ secrets.EVO_CR_PWD }}
 
-      - name: .NET - Build and push docker image to Evolution Aritfact Registry
+      - name: Build and push docker image to Evolution Aritfact Registry
         uses: docker/build-push-action@v5
         with:
           push: true
           tags: ${{ env.CR_URI }}/helloworld:build${{ github.sha }}
-          file: .
-          context: .
+          file: ./Dockerfile
+          context: ./Dockerfile
