@@ -17,7 +17,7 @@ function App() {
         <p>
           Вы развернули первое приложение c помощью Container Apps & Artifact Registry в облаке Cloud.ru Evolution.
         </p>
-        {/*<img src={containerAppSplash} width={'400px'} />*}
+        {/* <img src={containerAppSplash} width={'400px'} /> */}
       </div>
       <p className="read-the-docs">
         
